@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Name RNG</title>
+</head>
+<body class="h-screen w-screen grid grid-cols-12 grid-rows-13 gap-1 bg-amber-100 flex">
+    
+<p class="m-0 text-center col-start-2 col-end-5 row-start-2 text-5xl">Words Only!</p>
+<input type="text" id="nameInput" class="col-start-2 col-end-5 row-start-3 text-center text-3xl font-bold bg-white border-2 border-black rounded-lg" placeholder="Enter name">
+<button id="addNameButton" class="col-start-2 col-end-5 row-start-4 text-center text-3xl font-bold bg-gray-400 border-2 border-black rounded-lg">Add Name</button>
+
+<p class="m-0 text-center col-start-10 col-end-12 row-start-2 text-3xl">Numbers Only!</p>
+<input type="text" id="groupSizeInput" class="col-start-10 col-end-12 row-start-3 text-center text-3xl font-bold bg-white border-2 border-black rounded-lg" placeholder="Enter group size">
+<input type="text" id="groupInput" class="col-start-10 col-end-12 row-start-4 text-center text-3xl font-bold bg-white border-2 border-black rounded-lg" placeholder="Enter groups">
+
+<h2 class=" col-end-9 col-start-7 row-start-3 text-center text-2xl self-center">People per group:</h2>
+<h2 id="peoplePerGroupDisplay" class=" col-start-9 row-start-3 text-center text-3xl self-center">4</h2>
+
+<h2 class=" col-end-9 col-start-7 row-start-4 text-center text-2xl self-center">Number of groups:</h2>
+<h2 id="groupNumDisplay" class=" col-start-9 row-start-4 text-center text-3xl self-center">4</h2>
+
+<div id="namesContainer" class="bg-amber-300 border-2 rounded-[5px] col-start-2 col-end-7 row-start-5 row-end-12 overflow-auto flex flex-col items-center">
+
+
+</div>
+
+<div id="groupContainer" class="bg-amber-400 border-2 rounded-[5px] col-start-7 col-end-12 row-start-5 row-end-12 overflow-auto flex flex-col items-center">
+    
+
+</div>
+
+<button class="bg-green-400 border-2 active:bg-blue-400 active:border-white col-start-6 col-end-8 row-start-12">Generate Groups!</button>
+
+<script type="module" src="./Scripts/app.js"></script>
+</body>
+</html>
