@@ -1,10 +1,12 @@
 function GetNameFromLocalStorage() {
     let name = localStorage.getItem("Names");
 
-    if (name === null) 
+    if (name == null) 
     {
         return [];
     }
+
+    console.log(name);
 
     return JSON.parse(name);
 }
@@ -12,7 +14,7 @@ function GetNameFromLocalStorage() {
 function SetNameToLocalStorage(name)
 {
     let savedNames = GetNameFromLocalStorage();
-    if (savedNames.includes(name)) 
+    if (savedNames.includes(name.toLowerCase())) 
     {
         return;
     }
@@ -26,7 +28,7 @@ function DeleteNameFromLocalStorage(name)
 {
 
     let savedNames = GetNameFromLocalStorage();
-    if (!savedNames.includes(name)) 
+    if (!savedNames.includes(name.toLowerCase())) 
     {
         return;
     }

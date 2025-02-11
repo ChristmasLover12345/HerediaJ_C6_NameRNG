@@ -9,6 +9,9 @@ const groupInput = document.getElementById("groupInput");
 const peoplePerGroupDisplay = document.getElementById("peoplePerGroupDisplay");
 const groupNumDisplay = document.getElementById("groupNumDisplay");
 
+let groupBool1 = false;
+let groupBool2 = false;
+
 function DisplayNames() {
     namesContainer.innerHTML = "";
 
@@ -36,3 +39,19 @@ function DisplayNames() {
         nameDiv.appendChild(RemoveBtn);
     }
 }
+
+function addName(name)
+{
+
+    SetNameToLocalStorage(name);
+    DisplayNames();
+
+}
+
+addNameButton.addEventListener('click', (e) => {
+    const name = nameInput.value.trim();
+
+    if (name !== "" && isNaN(name)) {
+        addName(name);
+    }
+});
