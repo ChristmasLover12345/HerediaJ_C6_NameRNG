@@ -14,7 +14,7 @@ function GetNameFromLocalStorage() {
 function SetNameToLocalStorage(name)
 {
     let savedNames = GetNameFromLocalStorage();
-    if (savedNames.includes(name.toLowerCase())) 
+    if (savedNames.map(n => n.toLowerCase()).includes(name.toLowerCase())) 
     {
         return;
     }
@@ -28,7 +28,7 @@ function DeleteNameFromLocalStorage(name)
 {
 
     let savedNames = GetNameFromLocalStorage();
-    if (!savedNames.includes(name.toLowerCase())) 
+    if (!savedNames.map(n => n.toLowerCase()).includes(name.toLowerCase())) 
     {
         return;
     }

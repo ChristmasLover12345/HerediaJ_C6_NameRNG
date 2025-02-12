@@ -17,10 +17,10 @@
 <input type="text" id="groupInput" class="col-start-10 col-end-12 row-start-4 text-center text-3xl font-bold bg-white border-2 border-black rounded-lg" placeholder="Enter groups">
 
 <h2 class=" col-end-9 col-start-7 row-start-3 text-center text-2xl self-center">People per group:</h2>
-<h2 id="peoplePerGroupDisplay" class=" col-start-9 row-start-3 text-center text-3xl self-center">4</h2>
+<h2 id="peoplePerGroupDisplay" class=" col-start-9 row-start-3 text-center text-3xl self-center"></h2>
 
 <h2 class=" col-end-9 col-start-7 row-start-4 text-center text-2xl self-center">Number of groups:</h2>
-<h2 id="groupNumDisplay" class=" col-start-9 row-start-4 text-center text-3xl self-center">4</h2>
+<h2 id="groupNumDisplay" class=" col-start-9 row-start-4 text-center text-3xl self-center"></h2>
 
 <div id="namesContainer" class="bg-amber-300 border-2 rounded-[5px] col-start-2 col-end-7 row-start-5 row-end-12 overflow-auto flex flex-col items-center">
 
@@ -32,7 +32,10 @@
 
 </div>
 
-<button class="bg-green-400 border-2 active:bg-blue-400 active:border-white col-start-6 col-end-8 row-start-12">Generate Groups!</button>
+<button id="groupsBtn" class="bg-green-400 border-2 active:bg-blue-400 active:border-white col-start-6 col-end-8 row-start-12 ">Generate Groups!</button>
+
+<button id="rngBtn" class="bg-green-400 border-2 active:bg-blue-400 active:border-white col-start-2 col-end-4 row-start-12 ">Random guy</button>
+<p id="rngGuy" class="col-start-2 col-end-4 row-start-13 self-center text-center text-2xl">John SMith</p>
 
 <script type="module" src="./Scripts/app.js"></script>
 </body>
